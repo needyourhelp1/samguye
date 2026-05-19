@@ -6,7 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const SITE_CONTENT = {
   nav: [
-    { id: "hire", label: "Hire me" },
+    { id: "hire", label: "Work" },
     { id: "artist", label: "Artist" },
   ],
   section1: {
@@ -14,20 +14,22 @@ const SITE_CONTENT = {
     bgImage: "/uploads/portrait.jpeg",
     indexNum: "01",
     indexLabel: "Hire me",
-    eyebrow: "Producer · Available for work",
+    eyebrow: "Available to Produce",
     title: "Samuel Guye",
     cta: { 
-      label: "Hire me", 
-      href: "mailto:hello@samuelguye.com" 
+      label: "let's work", 
+      href: "https://tally.so/r/xXRZbE" 
     },
     credits: (
-      <>
-        Selected credits — produced <span className="track">i walk this earth all by myself</span>{" "}
-        for <span className="artist">ekkstacy</span>, a hushed midnight ballad off his 2023 record;
-        co-produced <span className="track">diffuse</span> with{" "}
-        <span className="artist">60 juno</span> under his SEATAPE alias, a slow-burning ambient
-        cut; and produced <span className="track">my world</span> for{" "}
-        <span className="artist">chuckyy</span>, a warm bedroom-pop single from last spring.
+            <>
+        A producer and songwriter whose work has shaped some of the
+        internet’s most influential underground records. At just 16, he helped launch{" "}
+        <span className="artist">EKKSTACY</span> into global attention by producing
+        the original instrumental behind “<span className="track">i walk this earth all by myself</span>,” 
+        a reupload of his work paired with vocals. Since then, he has collaborated
+        with <span className="artist">60 Juno</span>, produced for{" "}
+        <span className="artist">Chuckyy</span>, and contributed music featured
+        across major Hollywood titles and commercials.
       </>
     ),
     scrollHint: "Artist",
@@ -37,18 +39,18 @@ const SITE_CONTENT = {
     bgImage: "/uploads/working.JPG",
     indexNum: "02",
     indexLabel: "Artist",
-    eyebrow: "Two solo projects",
-    title: "Samuel Guye",
+    eyebrow: "Solo projects",
+    title: "",
     projects: [
-      { id: "seatape", name: "SEATAPE", meta: "Ambient · 2022 —", href: "#" },
-      { id: "bluesleeves", name: "bluesleeves", meta: "Songs · 2024 —", href: "#" },
+      { id: "seatape", name: "SEATAPE", meta: "Spotify · 2021 —", href: "https://open.spotify.com/artist/5kMQrGmWECicHt0Xl9ku9r" },
+      { id: "bluesleeves", name: "bluesleeves", meta: "Spotify · 2023 —", href: "https://open.spotify.com/artist/328YbM5jRbJFotrUhyqx1u" },
     ],
     footer: {
-      leftText: "Based in Paris · 2026",
+      leftText: "Based in London & Paris · 2026",
       links: [
-        { label: "Email", href: "mailto:hello@samuelguye.com" },
-        { label: "Instagram", href: "#" },
-        { label: "Spotify", href: "#" },
+        { label: "Email", href: "mailto:contact@samuelguye.com" },
+        { label: "Instagram", href: "https://www.instagram.com/samuel_guye/" },
+        { label: "YouTube", href: "https://www.youtube.com/@samuelguye" },
       ],
     },
   },
@@ -307,9 +309,9 @@ export default function Home() {
         </div>
 
         <div className="content-wrap">
-          <div className="section-index reveal">
+          {/* <div className="section-index reveal">
             {SITE_CONTENT.section2.indexNum}<small>{SITE_CONTENT.section2.indexLabel}</small>
-          </div>
+          </div> */}
 
           {SITE_CONTENT.section2.eyebrow && (
             <div className="eyebrow reveal">
