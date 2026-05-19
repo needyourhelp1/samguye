@@ -2,8 +2,8 @@
   /* ========================================= */
   /* 🎛️ BACKGROUND TUNING (FIX FOR WHITE IMAGES) */
   /* ========================================= */
-  --bg-image-brightness: 1; /* Lower this to make the image darker (e.g., 0.3 to 0.6) */
-  --bg-image-opacity: 0.5;    /* Lower this to blend it more into the black background */
+  /* bg-image-brightness: 1;/* Lower this to make the image darker (e.g., 0.3 to 0.6) */
+  --bg-image-opacity: 0.6;    /* Lower this to blend it more into the black background */
 
   --bg: #000000; 
   --bg-deep: #000000; 
